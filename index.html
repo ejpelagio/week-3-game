@@ -10,85 +10,56 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="composer.json"></script>
-	<script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </head>
 
-
-
-
 <body>
-<div class="maincontainer">
-
-	<div class="tittle">
-
-		<h1>Hangman Game</h1> 
-
-	</div>
-	<div class="data">
+	<div class="container">
+		<div class="jumbotron">
+			<h1>Hangman Game</h1>
+			<p>Guess the word!</p>
+		    </div>
+		</div>
 		
-		<label for="guessword">
-			Guess Word:
-		</label>
-
-	
-		<input type="text" name="" id="guessword">
-	
-		<label for="wordtrash">
-			Words Used:
-		</label>
-
-		<input type="text" name="" id="wordtrash">
-
-		<label for="socerboard">
-			Wins:
-		</label>
-
-		<input type="text" name="" id="socerboard">
-
-		<label for=" losscount">
-			Losses:
-		</label>
-
-		<input type="text" name="" id="losscount">
-
-	</div>
-
-
-	<div class="pictures">
-
-	<img src="assets/images/hangman1.jpg" id="hangman1">
-
-	<img src="assets/images/hangman2.jpg" id="hangman2" >
-	
-	<img src="assets/images/hangman3.jpg" id="hangman3" >
-
-	<img src="assets/images/hangman4.jpg" id="hangman4" > 
-
-	<img src="assets/images/hangman5.jpg" id="hangman5" >
-
-	<img src="assets/images/hangman6.jpg" id="hangman6" > 
-
-	<img src="assets/images/hangman7.jpg" id="hangman7" >
-
-	<img src="assets/images/hangman8.jpg" id="hangman8" > 
-
-
-
-
+		
+				<div class="panel panel-default">
+				<div class="panel-heading">
+				<h3 class="panel-title">Word to Guess</h3>
+			</div>
+			<div class="panel-body">
+				<h2 id="wordToGuess">_ _ _ _ _ _ _ _ _</h2>
+			</div>
+		</div>
 		
 
-
-
-
-	</div>
-
-</div>
-
-
-
-
-
+		<div class="panel panel-default">
+			<div class="panel-body">
+			Letters Guessed Wrong: <span id="wrongGuesses"></span>
+			</div>
+		</div>
 		
+				<div class="panel panel-default">
+				<div class="panel-body">
+				Guesses Left: <span id="numGuesses">9</span>
+				</div>
+			</div>
+			
+
+		<div class="panel panel-default">
+			<div class="panel-body">
+			Win Counter: <span id="winCounter">0</span>
+			</div>
+		</div>
+		
+			<!--Loss Counter box-->
+		<div class="panel panel-default">
+			<div class="panel-body">
+			Loss Counter: <span id="lossCounter">0</span>
+			</div>
+		</div>
+	</div>
+	<!--link to javascript-->
+	<script src="assets/javascript/game.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>	
 </body>
 </html>

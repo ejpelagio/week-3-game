@@ -1,5 +1,6 @@
 body{
 	background: url(http://images2.itechpost.com/data/images/full/44457/nfl-logo-over-metallic-silk-background.jpg);
+	background-size: cover;
 }
 
 body {
@@ -35,4 +36,8 @@ body {
 }
 .h1{
 	text-shadow: 2px 2px 19px 10px rgba(241, 234, 234, 0.36), inset 2px 2px 12px 4px rgb(29, 31, 31);
+}
+.credits{
+	    font-size: 33px;
+    margin-left: 526px;
 }
